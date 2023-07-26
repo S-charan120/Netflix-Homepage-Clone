@@ -2,119 +2,103 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Basic Banking System</title>
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet"
-    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-..."><!-- Add the complete link with the actual integrity value -->
 
-  <!-- Fonts -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-
-  <!-- AOS  -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <title>Portfolio</title>
 </head>
 
-<body onload="loader()">
-
-  <!-- loader for splash screen -->
-  <div id="loading"></div>
-
-  <!-- navbar starts here  -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="./index.html">SPARK BANK</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./customers.html">Customers</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- navbar ends here  -->
-
-  <!-- here content starts here -->
-  <div class="container-fluid hero-content">
-    <div class="row align-items-center">
-      <div class="col-md-6 col-sm-12 text-center" data-aos="fade-up">
-        <h1>Money transfer got EASY.</h1>
-        <p class="lead muted">TRANSFER YOUR MONEY WITH SPARK.</p>
-        <p>Welcome to SPARK BANK.</p>
-        <br>
-        <br>
-        <a class="get-started" href="./customers.html">Get Started</a>
-      </div>
-      <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
-        <div class="bank-img-div">
-          <img class="bank-img" src="https://i.pinimg.com/originals/28/2e/d4/282ed4b32c73225e1bded4921c035021.png" alt="img-showing-money-transfer">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- here content ends here -->
-
-
-
-
-  <!-- footer starts here -->
-  <footer>
-    <hr>
-    <div class="row text-center">
-      <div class="col-md-6">
-        <p>This project is made by Munimakula Sai Charan Teja.</p>
-
-      </div>
-      <div class="col-md-6 text-center">
-        <ul class="social-icons">
-          Contact Me:
-          <li><a target="_blank" class="github" href="https://github.com/S-charan120"><i
-                class="fab fa-github fa-2x"></i></a></li>
-
-          <li><a target="_blank" class="linkedin" href="www.linkedin.com/in/munimakula-sai-charan-teja-53b861270"><i
-                class="fab fa-linkedin fa-2x"></i></a></li>
-
-          
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
         </ul>
-      </div>
     </div>
-  </footer>
-  <!-- footer ends here -->
 
-  <!-- spalsh screen js -->
-  <script>
-    var preloader = document.getElementById("loading");
-    function loader() {
-      preloader.style.display = 'none';
-    }
-  </script>
+    <div class="content">
+        <header>
+            <div class="profile-photo">
+                <img src="profile.jpeg" alt="Profile Photo">
+            </div>
+            <h1 style="color: white;">M. Sai Charan Teja</h1>
+            <h3 style="color: white;">BTECH || ECE Student</h3>
+            <div id="about-me" class="about-me">
+                <h2>About Me</h2>
+                <ul style="color: aliceblue;">
+                    <li>I am a passionate web developer and python programmer.</li>
+                    <li>I am currently working on honing my programming skills and exploring new
+                        technologies.</li>
+                </ul>
+            </div>
+            <div id="career" class="career">
+                <h2>Career Objective</h2>
+                <p style="color: aliceblue;"> To levrage my strong foundation in electronics and communication engineering and passion for the IT industry to secure a challenging position that combines my technical expertise with innovation problem-solving skills.</p>
+            </div>
+            <hr>
+        </header>
 
-  <script src="assets/js/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
-  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+        <section id="education" class="education">
+            <h2>Education Qualification</h2>
+            <ul style="color: aliceblue;">
+                <li>Pursuing Btech in Electronics And Communication Engineering at GRIET</li>
+                <li>12th Grade - Sri Chaitanya Junior Kalasala</li>
+                <li>10th Grade - Sacred Heart High School</li>
+            </ul>
+        </section>
 
-  <!-- aos data  -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 700,
-    });
-  </script>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <span><i class="fab fa-html5"></i></span>
+                    HTML: Intermediate
+                </li>
+                <li>
+                    <span><i class="fab fa-css3-alt"></i></span>
+                    CSS: Intermediate
+                </li>
+                <li>Python: Intermediate</li>
+                <li><span></span><i class="fab fa-figma"></i>
+                    Javascript: Intermediate</li>
+                    <li><span><i class="fas fa-code"></i>
+                    </span> C: Intermediate</li>
+            </ul>
+        </section>
 
+        <section id="hobbies" class="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>
+                    <span><i class="fas fa-book"></i>
+                    </span>Reading
+                </li>
+                <li>
+                    <span> <i class="fas fa-leaf"></i>
+                    </span>Cooking
+                </li>
+                <li>
+                    <span><i class="fas fa-gamepad"></i>
+                    </span>Gaming
+                </li>
+            </ul>
+        </section>
+
+        <section id="languages" class="languages">
+            <h2>Languages</h2>
+            <ul >
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Telugu</li>
+            </ul>
+        </section>
+
+    </div>
 </body>
 
 </html>
